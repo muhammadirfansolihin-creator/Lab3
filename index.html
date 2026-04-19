@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Real-Time Weather Dashboard</title>
+	<link rel="stylesheet" href="style.css"></link>
+	<script src="app.js" defer></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header>
+		<h1>Real-Time Weather Dashboard</h1>
+	</header>
+
+	<main>
+		<div class="search-container">
+			<input type="text" placeholder="Search location..">
+			<button type="submit">
+				<i class="fa fa-search"></i>
+			</button>
+		</div>
+
+		<div class="card-currW">
+		    <div class="weather-header">
+		        <h2 id="city-name">--</h2>
+		        <p id="current-time">--</p>
+		    </div>
+
+		    <div class="weather-main">
+		        <div class="temp-display">
+		            <span id="temp-value">--</span><span class="unit">°C</span>
+		        </div>
+		        <p id="weather-desc">Waiting for input...</p>
+		    </div>
+
+		    <div class="weather-details">
+		        <div class="detail-item">
+		            <i class="fa fa-tint"></i>
+		            <span id="humidity">--%</span>
+		            <label>Humidity</label>
+		        </div>
+		        <div class="detail-item">
+		            <i class="fa fa-wind"></i>
+		            <span id="wind-speed">-- km/h</span>
+		            <label>Wind Speed</label>
+		        </div>
+		    </div>
+		</div>
+
+		<div class="container-forecast">
+			<div class="fc-card">
+				<p class="fc-day">MON</p>
+				<div class="fc-emoji"></div>
+				<div class="fc-temps">
+					<span class="high">--°</span>
+					<span class="low">--°</span>
+				</div>
+			</div>
+
+			<div class="fc-card">
+				<p class="fc-day">TUE</p>
+				<div class="fc-emoji"></div>
+				<div class="fc-temps">
+					<span class="high">--°</span>
+					<span class="low">--°</span>
+				</div>
+			</div>
+
+			<div class="fc-card">
+				<p class="fc-day">WED</p>
+				<div class="fc-emoji"></div>
+				<div class="fc-temps">
+					<span class="high">--°</span>
+					<span class="low">--°</span>
+				</div>
+			</div>
+
+			<div class="fc-card">
+				<p class="fc-day">THU</p>
+				<div class="fc-emoji"></div>
+				<div class="fc-temps">
+					<span class="high">--°</span>
+					<span class="low">--°</span>
+				</div>
+			</div>
+
+			<div class="fc-card">
+				<p class="fc-day">FRI</p>
+				<div class="fc-emoji"></div>
+				<div class="fc-temps">
+					<span class="high">--°</span>
+					<span class="low">--°</span>
+				</div>
+			</div>
+
+			<div class="fc-card">
+				<p class="fc-day">SAT</p>
+				<div class="fc-emoji"></div>
+				<div class="fc-temps">
+					<span class="high">--°</span>
+					<span class="low">--°</span>
+				</div>
+			</div>
+
+			<div class="fc-card">
+				<p class="fc-day">SUN</p>
+				<div class="fc-emoji"></div>
+				<div class="fc-temps">
+					<span class="high">--°</span>
+					<span class="low">--°</span>
+				</div>
+			</div>
+		</div>
+	</main>
+
+</body>
+</html>
