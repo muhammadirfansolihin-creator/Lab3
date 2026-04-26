@@ -5,8 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Real-Time Weather Dashboard</title>
 	<link rel="stylesheet" href="style.css"></link>
-	<script src="app.js" defer></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="app.js" defer></script>
 </head>
 
 <body>
@@ -17,33 +18,33 @@
 	<main>
 		<div class="search-container">
 			<input type="text" placeholder="Search location..">
-			<button type="submit">
+			<button type="button">
 				<i class="fa fa-search"></i>
 			</button>
 		</div>
 
 		<div class="card-currW">
 		    <div class="weather-header">
-		        <h2 id="city-name">--</h2>
-		        <p id="current-time">--</p>
+		        <h2 id="city-name" class="skeleton">--</h2>
+		        <p id="current-time" class="skeleton">--</p>
 		    </div>
 
 		    <div class="weather-main">
 		        <div class="temp-display">
-		            <span id="temp-value">--</span><span class="unit">°C</span>
+		            <span id="temp-value" class="skeleton">--</span><span class="unit">°C</span>
 		        </div>
-		        <p id="weather-desc">Waiting for input...</p>
+		        <p id="weather-desc" class="skeleton">Waiting for input...</p>
 		    </div>
 
 		    <div class="weather-details">
 		        <div class="detail-item">
 		            <i class="fa fa-tint"></i>
-		            <span id="humidity">--%</span>
+		            <span id="humidity" class="skeleton">--%</span>
 		            <label>Humidity</label>
 		        </div>
 		        <div class="detail-item">
 		            <i class="fa fa-wind"></i>
-		            <span id="wind-speed">-- km/h</span>
+		            <span id="wind-speed" class="skeleton">-- km/h</span>
 		            <label>Wind Speed</label>
 		        </div>
 		    </div>
